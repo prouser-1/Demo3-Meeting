@@ -7,7 +7,7 @@ Vue.createApp({
         }; 
     },
     methods: {
-        handlyInput (event){
+        handleInput (event){
             this.valueInput = event.target.value;
         },
         addTask(){
