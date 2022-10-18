@@ -17,13 +17,8 @@
       <div class="container">
         <div class="logo">Планёрка</div>
         <div class="form">
-          <input
-            type="text"
-            v-bind:value="valueInput"
-            v-on:input="handleInput"
-            v-on:keypress.enter="addTask"
-            >
-          <button class="btn" v-on:click="addTask">Добавит в план</button>
+          <input type="text" v-bind:value="valueInput" v-on:input="handleInput" v-on:keypress.enter="addTask">
+          <button class="btn" v-on:click="addTask">Добавить в план</button>
         </div>
       </div>
     </div>
@@ -33,10 +28,7 @@
         <span class="mask-num">{{ needDoList.length }}</span>
       </h2>
       <ul class="mask-list">
-        <li
-          v-for="(mask, index) in needDoList"
-          :key="mask.id"
-        >
+        <li v-for="(mask, index) in needDoList" :key="mask.id">
           <div>
             <input type="checkbox" v-on:change="doCheck(index, 'need')"/>
             <span>{{ mask.title }}</span>
@@ -49,10 +41,7 @@
         <span class="mask-num">{{ completeList.length }}</span>
       </h2>
       <ul class="mask-list complete-list">
-        <li
-          v-for="(mask, index) in completeList"
-          :key="mask.id"
-        >
+        <li v-for="(mask, index) in completeList" :key="mask.id">
           <div>
             <input type="checkbox" v-on:change="doCheck(index, 'complete')"  checked>
             <span>{{ mask.title }}</span>
@@ -61,9 +50,16 @@
         </li>
       </ul>
     </div>
+    <div class="footer">
+        <div class="container">
+            <a class="git" style="text-decoration:none" href="https://github.com/prouser-1/Demo3-Meeting">Перейти в GitHub</a>
+        </div>
+    </div>
   </div>
+
   <!-- End App -->
   <script src="https://unpkg.com/vue@next"></script>
   <script src="./js/app.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

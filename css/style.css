@@ -6,6 +6,7 @@
 body {
   font-family: "Choco_cooky";
   font-weight: 300;
+  background: rgb(245, 245, 245);
 }
 
 h2 {
@@ -38,7 +39,7 @@ h2 .mask-num {
   margin-bottom: 40px;
 }
 
-.header .container {
+.header .container, .footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,10 +53,35 @@ h2 .mask-num {
   cursor: pointer;
 }
 
+.footer .container .git{
+  line-height: 50px;
+  color: #ddd;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.git{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  decor
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+}
+
 .header .container .form {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  color: #ddd
 }
 
 .header .container .form input {
@@ -71,12 +97,12 @@ h2 .mask-num {
 }
 
 .header .container .form input:focus {
-  border: 1px solid #12c0dd;
+  border: 1px solid #1153fc;
 }
 
 .btn {
-  background-color: #12c0dd;
-  border: 1px solid #12c0dd;
+  background-color: #1153fc;
+  border: 1px solid #1153fc;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -88,8 +114,8 @@ h2 .mask-num {
 }
 
 .btn:hover {
-  background-color: #0dd6f8;
-  border-color: #0dd6f8;
+  background-color: #0048ff;
+  border-color: #0048ff;
 }
 
 .mask-list li {
@@ -100,7 +126,7 @@ h2 .mask-num {
   line-height: 32px;
   margin-bottom: 10px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
 }
 
 .mask-list.complete-list li {
@@ -158,7 +184,7 @@ input[type="checkbox"]:checked + span::before{
    top:calc(50% - 10px);
    background-color: transparent;
    border-radius: 2px;
-   border: 2px solid #4fc1de;
+   border: 2px solid #1153fc;
 }
 input[type="checkbox"]:checked + span::after{
    content:'';
@@ -169,7 +195,7 @@ input[type="checkbox"]:checked + span::after{
    opacity: 1;
    left: 4px;
    top: calc(50% - 6px);
-   background-color: #4fc1de;
+   background-color: #1153fc;
 }
 input[type="checkbox"]:not(:checked) + span::before{
    content:'';
